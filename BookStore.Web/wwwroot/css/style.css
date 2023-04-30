@@ -1,0 +1,48 @@
+﻿.action-panel{
+    margin-top:25px;
+}
+
+    .action-panel .card {
+        padding:25px;
+    }
+
+.form-group{
+    font-size:13px;
+}
+
+    .form-group input {
+        font-size: 13px;
+    }
+
+        .form-group input[type=checkbox] {
+            height:23px;
+            width:23px;
+        }
+
+    .form-group select {
+        font-size: 13px;
+    }
+
+.header-button{
+    padding:5px;
+}
+
+/*.create-form-button button {
+    padding-left: 10px;
+}*/
+
+.view-book-row .form-group label {
+    font-weight:500;
+}
+
+.list-book-row{
+
+}
+    .list-book-row input[type=checkbox] {
+        width: 30px !important;
+        margin-top: 10px;
+    }
+
+    .list-book-row input[type=checkbox]:hover {
+        cursor:pointer;
+    }

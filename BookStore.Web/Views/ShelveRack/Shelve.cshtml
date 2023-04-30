@@ -1,0 +1,86 @@
+﻿
+@{
+    //ViewData["Title"] = "CreateUpdate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/js/custom/shelve.js"></script>
+<h2>Shelve Details</h2>
+<hr />
+<div class="action-panel create-shelve-row">
+    <h3 class="text-center mb-4 create-shelve-title">Create Shelve</h3>
+    <div class="col-xl-12 col-lg-12 col-md-12 col-11 text-center">
+        <div class="card">
+            <h5 class="text-center mb-4">Please fill details below for shelve</h5>
+            <form class="form-card">
+                <div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                        <label class="form-control-label">Code</label>
+                        <input class="form-control" type="text" id="txtSCode" name="txtSCode" placeholder="Enter the shelve code">
+                    </div>
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                        <label class="form-control-label">Name</label>
+                        <input class="form-control" type="text" id="txtSName" name="txtSName" placeholder="Enter shelve name">
+                    </div>
+                </div>
+                <div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                        <label class="form-control-label">Rack</label>
+                        <select class="form-control form-control-lg" id="ddlSRackId" name="ddlSRackId">
+                        </select>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="form-group create-form-button col-sm-8">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-4">
+                                <button type="button" id="btnCreate" class="form-control btn-primary btnCreateUpdate">Create</button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" id="btnCancelView" class="form-control btn-outline-dark">Cancel</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="action-panel list-shelve-row">
+    <h3 class="text-center mb-4">Shelf List</h3>
+    <div class="container">
+        <div class="row header-button justify-content-end">
+            <div class="col-sm-2">
+                <button type="button" id="btnCreateView" class="form-control btn-primary">Create</button>
+            </div>
+        </div>
+        <table class="table" id="ShelveDatatable">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Rack Id</th>
+                    <th>Deleted</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            @*<tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>*@
+        </table>
+    </div>
+</div>
